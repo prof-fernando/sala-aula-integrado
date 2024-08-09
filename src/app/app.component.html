@@ -1,8 +1,15 @@
 <h1>Chat firebase</h1>
+<mat-form-field>
+  <mat-label>Mensagem:</mat-label>
+  <input [(ngModel)]="textoDigitado" matInput type="text" />
+</mat-form-field>
 
-<input matInput type="text" />
-<button>Enviar</button>
+<button (click)="enviarMensagem()">Enviar</button>
+
 <fieldset>
   <legend>Mensagens</legend>
-  <p *ngFor="let msg of mensagens"></p>
+  <p *ngFor="let msg of mensagens | async">
+    {{ msg.nome }} diz:
+    {{ msg.conteudo }}
+  </p>
 </fieldset>
