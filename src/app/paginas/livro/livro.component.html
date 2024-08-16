@@ -1,0 +1,12 @@
+<table mat-table class="mat-elevation-z8">
+  <thead>
+    <th>Título</th>
+    <th>Autor</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let livro of livros | async">
+      <td>{{ livro.titulo }}</td>
+      <td>{{ livro.autor }}</td>
+    </tr>
+  </tbody>
+</table>
