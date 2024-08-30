@@ -2,11 +2,19 @@
   <thead>
     <th>Título</th>
     <th>Autor</th>
+    <th></th>
+    <th></th>
   </thead>
   <tbody>
     <tr *ngFor="let livro of livros | async">
       <td>{{ livro.titulo }}</td>
       <td>{{ livro.autor }}</td>
+      <td>e</td>
+      <td>
+        <button mat-icon-button>
+          <mat-icon>clear</mat-icon>
+        </button>
+      </td>
     </tr>
   </tbody>
 </table>

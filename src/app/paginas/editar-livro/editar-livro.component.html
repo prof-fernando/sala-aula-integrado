@@ -1,13 +1,9 @@
 <form [formGroup]="formGroup">
-  <mat-form-field>
-    <mat-label>Titulo:</mat-label>
-    <input formControlName="titulo" type="text" />
-  </mat-form-field>
+  <mat-label>Titulo:</mat-label>
+  <input formControlName="titulo" type="text" />
 
-  <mat-form-field>
-    <mat-label>Autor:</mat-label>
-    <input formControlName="autor" type="text" />
-  </mat-form-field>
+  <mat-label>Autor:</mat-label>
+  <input formControlName="autor" type="text" />
 
   <button (click)="salvar()">Salvar</button>
 </form>
